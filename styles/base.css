@@ -34,13 +34,18 @@ header h1 {
     background-color: #333;
 }
 
+
+
 .navigation a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
 .navigation a:hover {
+    background-color: #24577a;
     text-decoration: underline;
 }
 
@@ -79,10 +84,7 @@ main {
     font-size: 1rem;
 }
 
-.about-content {
-    padding: 1rem;
-    line-height: 1.7;
-}
+
 
 .resource-list {
     padding: 4rem 2rem;
