@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #d90b3e;
+    --secondary-color: #008751;
+    --white: #ffffff;
+    --text-color: #222222;
+    --card-background: rgba(255, 255, 255, 0.88);
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 8px solid var(--secondary-color);
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+}
+
+main {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero img {
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    background-color: var(--white);
+}
+
+.card {
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info p,
+.weather-info p {
+    margin-bottom: 0.7rem;
+}
+
+.info strong,
+.weather-info strong {
+    margin-right: 0.4rem;
+}
+
+.weather {
+    border-top: 1px solid #eeeeee;
+}
+
+.weather-icon {
+    margin-bottom: 1.5rem;
+}
+
+.weather-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+
+/* Wider view */
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 1.5rem;
+        border-bottom: 8px solid var(--secondary-color);
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .content {
+        position: absolute;
+        top: 190px;
+        left: 20px;
+        right: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        background: transparent;
+    }
+
+    .card {
+        background-color: var(--card-background);
+        padding: 1rem;
+        width: 320px;
+        min-height: 300px;
+        text-align: center;
+    }
+
+    .card h2 {
+        background-color: var(--secondary-color);
+        color: var(--white);
+        text-align: left;
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .weather {
+        border-top: none;
+        margin-top: 260px;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.5rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
