@@ -1,0 +1,178 @@
+:root {
+    --purple: #3b0a45;
+    --purple-light: #f4eef6;
+    --accent: #14b8a6;
+    --text: #111827;
+    --border: #b8aebc;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f7f9;
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+main {
+    width: min(850px, 94%);
+    margin: 2rem auto;
+}
+
+form {
+    background-color: var(--purple-light);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+fieldset {
+    border: 0;
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+label {
+    display: block;
+    margin: 0.8rem 0;
+    font-weight: 600;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 0.35rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--white);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.rating label {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.rating input {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0.4rem auto 0;
+}
+
+input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.optional {
+    color: #374151;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--accent);
+    color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0f9f91;
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.confirmation section {
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.confirmation h2 {
+    color: var(--purple);
+    font-size: 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--purple);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        width: min(850px, 88%);
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}

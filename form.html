@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Review</title>
+
+    <meta name="description" content="Product review form for WDD 131 Dynamic Web Fundamentals.">
+
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <fieldset>
+                <legend>Product Information</legend>
+
+                <label for="product">Product Name</label>
+
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>
+                        Select a Product ...
+                    </option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <div class="rating">
+                    <label for="rating1">
+                        <span>☆</span>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </label>
+
+                    <label for="rating2">
+                        <span>☆☆</span>
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                    </label>
+
+                    <label for="rating3">
+                        <span>☆☆☆</span>
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                    </label>
+
+                    <label for="rating4">
+                        <span>☆☆☆☆</span>
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                    </label>
+
+                    <label for="rating5">
+                        <span>☆☆☆☆☆</span>
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Installation</legend>
+
+                <label for="installed">Date of Installation</label>
+
+                <input type="date" id="installed" name="installed" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+
+                <p>Which features did you find useful?</p>
+
+                <label>
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    Durability
+                </label>
+
+                <label>
+                    <input type="checkbox" id="ease" name="features" value="Ease of Use">
+                    Ease of Use
+                </label>
+
+                <label>
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    Performance
+                </label>
+
+                <label>
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    Design
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="review">
+                    Written Review
+                    <span class="optional">(Optional)</span>
+                </label>
+
+                <textarea id="review" name="review" rows="6"></textarea>
+
+                <label for="username">
+                    Your Name
+                    <span class="optional">(Optional)</span>
+                </label>
+
+                <input type="text" id="username" name="username">
+            </fieldset>
+
+            <input type="submit" value="Post Review" class="submit-button">
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Mary Akintade | Nigeria
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
