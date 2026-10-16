@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore CampusNest for student academic resources, class information, campus updates, and community connections.">
+  <meta name="author" content="CampusNest">
+  <title>CampusNest | Your University Information Hub</title>
+  
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="scripts/site.js" defer></script>
+</head>
+
+<body class="site-home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="CampusNest home">
+        Campus<span>Nest</span>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a class="active" href="index.html" aria-current="page">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="community.html">Community</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR CAMPUS, CONNECTED</p>
+          <h1>Your university life, <span>in one place.</span></h1>
+          <p class="hero-description">
+            Discover useful academic resources, organize class information,
+            keep up with campus updates, and explore your student community
+            with CampusNest.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="resources.html">Explore resources</a>
+            <a class="button button-secondary" href="community.html">Visit community</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <p class="panel-label">WELCOME TO CAMPUSNEST</p>
+          <h2>Make student life simpler.</h2>
+          <ul class="welcome-list">
+            <li><span class="checkmark">✓</span> Academic support</li>
+            <li><span class="checkmark">✓</span> Class information</li>
+            <li><span class="checkmark">✓</span> Campus updates</li>
+            <li><span class="checkmark">✓</span> Student connections</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section" aria-labelledby="search-heading">
+      <div class="container search-inner">
+        <div>
+          <p class="eyebrow">FIND WHAT YOU NEED</p>
+          <h2 id="search-heading">Search CampusNest</h2>
+          <p>Try words like study, class, updates, or community.</p>
+        </div>
+
+        <form class="search-form" id="search-form">
+          <label class="visually-hidden" for="site-search">Search CampusNest</label>
+          <input id="site-search" name="search" type="search"
+            placeholder="What are you looking for?" autocomplete="off">
+          <button class="button" type="submit">Search</button>
+          <p id="search-message" class="search-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">EXPLORE THE HUB</p>
+          <h2 id="categories-heading">What do you need today?</h2>
+          <p>Start with a section that supports your campus journey.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <div class="category-icon" aria-hidden="true">📚</div>
+            <h3>Academic Resources</h3>
+            <p>Explore study guidance, revision support, and useful learning materials.</p>
+            <a class="card-link" href="resources.html#academics">Explore resources →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon" aria-hidden="true">🗓️</div>
+            <h3>Class Information</h3>
+            <p>Find helpful ideas for keeping course details and class schedules organized.</p>
+            <a class="card-link" href="resources.html#class-info">Explore class info →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon" aria-hidden="true">📢</div>
+            <h3>Campus Updates</h3>
+            <p>Discover ways to stay informed about announcements and campus activities.</p>
+            <a class="card-link" href="resources.html#campus-updates">Explore updates →</a>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon" aria-hidden="true">🤝</div>
+            <h3>Student Community</h3>
+            <p>Explore ideas for connecting with students and sharing useful suggestions.</p>
+            <a class="card-link" href="community.html">Meet the community →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted">
+      <div class="container community-banner">
+        <div>
+          <p class="eyebrow">BETTER TOGETHER</p>
+          <h2>Have an idea to improve student life?</h2>
+          <p>Share a suggestion and help shape the CampusNest experience.</p>
+        </div>
+        <a class="button" href="community.html#suggestion-form">Share a suggestion</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo footer-logo" href="index.html">Campus<span>Nest</span></a>
+        <p>Your university information hub.</p>
+        <p class="copyright">© <span id="current-year">2026</span> CampusNest</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="resources.html">Resources</a>
+        <a href="community.html">Community</a>
+        <a href="references.html">References</a>
+        <a href="siteplan.html">Site plan</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -4,297 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CampusNest - Site Plan</title>
-
-    <meta name="description" content="Website planning document for CampusNest, a university student information hub.">
-
+    <meta name="description"
+        content="The CampusNest website plan, including its purpose, audience, design choices, and page layouts.">
+    <meta name="author" content="CampusNest">
+    <title>CampusNest | Site Plan</title>
+    <link rel="stylesheet" href="styles/site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="siteplan.css">
 </head>
 
-<body>
-    <header>
-        <div class="logo">CampusNest</div>
-        <p>Stay informed. Stay connected.</p>
+<body class="site-plan">
+    <header class="plan-header">
+        <div class="container">
+            <a class="logo" href="index.html">Campus<span>Nest</span></a>
+            <p class="plan-subtitle">Website Planning Document</p>
+        </div>
     </header>
 
-    <main>
-        <!-- Site Name -->
-        <section>
-            <h2>Site Name</h2>
+    <main class="container plan-main">
+        <section class="plan-section">
+            <p class="eyebrow">PROJECT OVERVIEW</p>
+            <h1>CampusNest Site Plan</h1>
+            <p>
+                CampusNest is a student information hub designed to help university
+                students find academic resources, organize class information, keep up
+                with campus updates, and connect with fellow students.
+            </p>
+        </section>
 
+        <section class="plan-section">
+            <h2>1. Website Name</h2>
             <h3>CampusNest</h3>
-
             <p>
-                CampusNest is a university student information hub designed to
-                help students find important academic, campus, and class
-                information in one organized place.
+                The name combines “campus,” representing university life, with “nest,”
+                representing a welcoming place to find useful information. CampusNest
+                aims to be a convenient online home for student resources.
             </p>
+            <p><strong>Suggested tagline:</strong> Your university information hub.</p>
+        </section>
 
+        <section class="plan-section">
+            <h2>2. Website Purpose</h2>
             <p>
-                I chose the name CampusNest because it combines the idea of a
-                university campus with the word "nest." A nest represents a
-                central and comfortable place where students can find useful
-                information, resources, and connections.
+                The website will organize useful student information in one place.
+                Visitors will be able to explore academic resources, review class
+                information, discover campus updates, and find student community
+                information. A search feature will help visitors locate relevant
+                sections quickly.
             </p>
         </section>
 
-        <!-- Site Purpose -->
-        <section>
-            <h2>Site Purpose</h2>
-
-            <p>
-                CampusNest will provide university students with organized
-                access to academic resources, campus updates, class
-                information, student communities, and useful daily
-                information.
-            </p>
-
-            <p>
-                The website will bring information that is often scattered
-                across different sources into one simple and organized
-                student-focused experience.
-            </p>
-
-            <p>
-                The site will help students keep track of their academic
-                responsibilities while making it easier to find useful
-                information about their campus and student community.
-            </p>
-        </section>
-
-        <!-- Target Audience -->
-        <section>
-            <h2>Target Audience</h2>
-
-            <p>
-                The primary audience is university students who need a simple
-                way to keep track of classes, deadlines, announcements,
-                academic resources, and campus information.
-            </p>
-        </section>
-
-        <!-- Scenarios -->
-        <section>
-            <h2>Scenarios</h2>
-
+        <section class="plan-section">
+            <h2>3. Target Audience</h2>
             <ul>
-                <li>
-                    When is my next class and what important school information
-                    do I need to know today?
-                </li>
-
-                <li>
-                    Where can I find materials and past questions for my course?
-                </li>
-
-                <li>
-                    What does this school announcement mean and what do I need
-                    to do?
-                </li>
+                <li>University students looking for study materials and revision support.</li>
+                <li>Students who want to organize class and course information.</li>
+                <li>Students interested in campus announcements and activities.</li>
+                <li>New students looking for helpful university information.</li>
             </ul>
         </section>
 
-        <!-- Color Schema -->
-        <section>
-            <h2>Color Schema</h2>
+        <section class="plan-section">
+            <h2>4. Site Goals</h2>
+            <ul>
+                <li>Make student information easy to find.</li>
+                <li>Provide a simple and responsive browsing experience.</li>
+                <li>Help students discover academic and campus resources.</li>
+                <li>Demonstrate practical HTML, CSS, and JavaScript skills.</li>
+            </ul>
+        </section>
 
-            <p>
-                CampusNest will use a clean and modern color scheme that gives
-                the website a friendly and professional student-technology
-                appearance.
-            </p>
+        <section class="plan-section">
+            <h2>5. Planned Website Pages</h2>
+            <div class="plan-card-grid">
+                <article class="plan-card">
+                    <h3>Home</h3>
+                    <p>Introduces CampusNest and provides search and links to key sections.</p>
+                </article>
+                <article class="plan-card">
+                    <h3>Resources</h3>
+                    <p>Organizes study materials, class information, and campus updates.</p>
+                </article>
+                <article class="plan-card">
+                    <h3>Community</h3>
+                    <p>Introduces student connection ideas and includes a suggestion form.</p>
+                </article>
+                <article class="plan-card">
+                    <h3>References</h3>
+                    <p>Lists external resources used in developing the website.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>6. Color Scheme</h2>
+            <p>The colors are chosen to create a clear, calm, and modern student experience.</p>
 
             <div class="color-grid">
-
-                <div class="color-card">
-                    <div class="color-swatch navy"></div>
-
-                    <div>
-                        <h3>Deep Navy</h3>
-                        <p class="hex">#0F172A</p>
-                        <p>
-                            Used for the header, navigation, major headings,
-                            and primary text.
-                        </p>
-                    </div>
+                <div class="color-item">
+                    <div class="color-swatch swatch-navy"></div>
+                    <strong>Navy</strong>
+                    <code>#0F172A</code>
+                    <p>Headers and primary text</p>
                 </div>
-
-                <div class="color-card">
-                    <div class="color-swatch teal"></div>
-
-                    <div>
-                        <h3>Teal</h3>
-                        <p class="hex">#14B8A6</p>
-                        <p>
-                            Used for buttons, links, accents, icons, and
-                            interactive elements.
-                        </p>
-                    </div>
+                <div class="color-item">
+                    <div class="color-swatch swatch-teal"></div>
+                    <strong>Teal</strong>
+                    <code>#14B8A6</code>
+                    <p>Accents and action buttons</p>
                 </div>
-
-                <div class="color-card">
-                    <div class="color-swatch soft-white"></div>
-
-                    <div>
-                        <h3>Soft White</h3>
-                        <p class="hex">#F8FAFC</p>
-                        <p>
-                            Used for the main page background.
-                        </p>
-                    </div>
+                <div class="color-item">
+                    <div class="color-swatch swatch-white"></div>
+                    <strong>White</strong>
+                    <code>#FFFFFF</code>
+                    <p>Cards and content areas</p>
                 </div>
-
-                <div class="color-card">
-                    <div class="color-swatch white"></div>
-
-                    <div>
-                        <h3>White</h3>
-                        <p class="hex">#FFFFFF</p>
-                        <p>
-                            Used for cards and information sections.
-                        </p>
-                    </div>
+                <div class="color-item">
+                    <div class="color-swatch swatch-background"></div>
+                    <strong>Soft white</strong>
+                    <code>#F8FAFC</code>
+                    <p>Page background</p>
                 </div>
-
             </div>
         </section>
 
-        <!-- Typography -->
-        <section>
-            <h2>Typography</h2>
-
-            <p>
-                CampusNest will use two modern sans-serif fonts to create a
-                clean, readable, and professional design.
-            </p>
-
-            <div class="font-card">
-                <h3 class="poppins">Poppins</h3>
-
-                <p>
-                    Poppins will be used for the site name, headings,
-                    navigation, and other important labels.
-                </p>
+        <section class="plan-section">
+            <h2>7. Typography</h2>
+            <div class="type-sample">
+                <h3 class="sample-heading">Poppins — Headings</h3>
+                <p>Used for page titles, section headings, and card titles.</p>
             </div>
-
-            <div class="font-card">
-                <h3 class="inter">Inter</h3>
-
-                <p>
-                    Inter will be used for body text, descriptions, labels,
-                    and general content.
-                </p>
+            <div class="type-sample">
+                <p class="sample-body">Inter — Body text</p>
+                <p>Used for paragraphs, navigation links, descriptions, and forms.</p>
             </div>
         </section>
 
-        <!-- Wireframes -->
-        <section>
-            <h2>Wireframes</h2>
-
-            <h3>Mobile Home Page</h3>
-
-            <p>
-                The mobile layout will use a simple vertical structure with
-                navigation, featured content, a search area, categories, and
-                content cards.
-            </p>
-
-            <div class="wireframe mobile-wireframe" aria-label="Mobile home page wireframe">
-                <div class="wire-header">
-                    <span>Logo</span>
-                    <span>☰</span>
+        <section class="plan-section">
+            <h2>8. Homepage Wireframe</h2>
+            <p>Planned desktop layout:</p>
+            <div class="wireframe">
+                <div class="wireframe-block">Header and navigation</div>
+                <div class="wireframe-block wireframe-hero">Welcome message and search</div>
+                <div class="wireframe-row">
+                    <div class="wireframe-block">Academic resources</div>
+                    <div class="wireframe-block">Class information</div>
+                    <div class="wireframe-block">Campus updates</div>
                 </div>
-
-                <div class="wire-hero">
-                    Featured Content
-                </div>
-
-                <div class="wire-search">
-                    Search
-                </div>
-
-                <div class="wire-category-row">
-                    <div>Category 1</div>
-                    <div>Category 2</div>
-                </div>
-
-                <div class="wire-content">
-                    Featured Item
-                </div>
-
-                <div class="wire-content">
-                    Latest Information
-                </div>
-
-                <div class="wire-button">
-                    Explore More
-                </div>
-
-                <div class="wire-footer-nav">
-                    Home &nbsp; Browse &nbsp; Favorites &nbsp; Profile
-                </div>
+                <div class="wireframe-block">Community call to action</div>
+                <div class="wireframe-block">Footer and references</div>
             </div>
 
-            <h3>Desktop Home Page</h3>
-
-            <p>
-                The desktop layout will use a wider content area with a
-                horizontal navigation bar, featured content, search,
-                categories, and multiple information cards.
-            </p>
-
-            <div class="wireframe desktop-wireframe" aria-label="Desktop home page wireframe">
-                <div class="wire-header">
-                    <span>Logo</span>
-
-                    <span>
-                        Home &nbsp; Browse &nbsp; Categories &nbsp; About &nbsp; Profile
-                    </span>
-                </div>
-
-                <div class="wire-hero">
-                    Featured Content
-                </div>
-
-                <div class="wire-search">
-                    Search
-                </div>
-
-                <div class="desktop-card-grid">
-                    <div class="wire-content">
-                        Featured Item
-                    </div>
-
-                    <div class="wire-content">
-                        Category List
-                    </div>
-
-                    <div class="wire-content">
-                        Latest Information
-                    </div>
-
-                    <div class="wire-content">
-                        Popular Content
-                    </div>
-                </div>
-
-                <div class="wire-button">
-                    Explore More
-                </div>
+            <p>Planned mobile layout:</p>
+            <div class="mobile-wireframe">
+                <div class="wireframe-block">Header and menu</div>
+                <div class="wireframe-block wireframe-hero">Welcome and search</div>
+                <div class="wireframe-block">Academic resources</div>
+                <div class="wireframe-block">Class information</div>
+                <div class="wireframe-block">Campus updates</div>
+                <div class="wireframe-block">Footer</div>
             </div>
+        </section>
+
+        <section class="plan-section">
+            <h2>9. Functionality</h2>
+            <ul>
+                <li>Responsive navigation for smaller screens.</li>
+                <li>JavaScript-powered search for website sections.</li>
+                <li>Interactive page elements and a student suggestion form.</li>
+                <li>Local browser storage for selected preferences or demo submissions.</li>
+            </ul>
+            <p>
+                Local storage features are demonstrations on the visitor's own browser;
+                they do not send information to a server.
+            </p>
+        </section>
+
+        <section class="plan-section">
+            <h2>10. Navigation</h2>
+            <p>
+                All main pages will share a consistent navigation menu and footer.
+                Visitors can use the links to move between the home, resources,
+                community, and references pages.
+            </p>
+            <a class="button" href="index.html">Visit CampusNest homepage</a>
         </section>
     </main>
 
-    <footer>
-        <p>CampusNest Site Plan | WDD 131</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>CampusNest · Website Planning Document</p>
+            <a href="index.html">Return to homepage</a>
+        </div>
     </footer>
 </body>
 
